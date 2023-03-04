@@ -1,0 +1,34 @@
+@import "styles/normalize.css";
+@import "styles/val.less";
+
+body{
+  --md-color: #222;
+  --md-hover-color: #000;
+  --md-bk-color: #fff;
+  --md-bk-color-outstand: #f6f6f6;
+  --md-bk-hover-color: #f5f7fa;
+  --md-border-color: #e6e6e6;
+  --md-border-hover-color: #b9b9b9;
+  --md-border-active-color: #999;
+  --md-modal-mask: #00000073;
+  --md-scrollbar-bg-color: #e2e2e2;
+  --md-scrollbar-thumb-color: #0000004d;
+  --md-scrollbar-thumb-hover-color: #00000059;
+  --md-scrollbar-thumb-avtive-color: #00000061;
+}
+
+div::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+ }
+div::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  opacity: 0.2;
+  background: var(--md-scrollbar-thumb-color);
+}
+div::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  background: var(--md-scrollbar-bg-color);
+}
